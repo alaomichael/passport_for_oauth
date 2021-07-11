@@ -11,7 +11,12 @@ const app = express();
 app.set('view engine', 'ejs');
 
 //  connect to mongodb
-mongoose.connect(keys.mongodb.dbURL,()=>{
+mongoose.connect(keys.mongodb.dbURL, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+  },()=>{
     console.log('Connected to mongodb.')
 });
 
