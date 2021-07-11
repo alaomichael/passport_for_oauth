@@ -7,5 +7,8 @@ module.exports = {
     },
     mongodb: {
         dbURL: 'mongodb+srv://developermichael:babatunde2@myfirstcluster.ctklt.mongodb.net/0AuthwithPassportDatabase?retryWrites=true&w=majority'
+    },
+    session : {
+        cookieKey:'yesthetutorialisawesome'
     }
 };
